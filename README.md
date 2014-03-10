@@ -13,9 +13,9 @@ Sequential list processing
 ------
 If a list ends with `--`, the top level of tasks will be treated as a priority queue and the most important will be labeled `@next_action`.
 Importance is determined by:
- * Priority
- * Due date
- * Order in the list
+ 1. Priority
+ 2. Due date
+ 3. Order in the list
 
 `@next_action` waterfalls into indented regions. If the top level task that is selected to receive the `@next_action` label has subtasks, the same algorithm is used. The `@next_action` label is only applied to one task.
 
