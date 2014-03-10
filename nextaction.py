@@ -315,11 +315,12 @@ def main():
   logging.debug("Got initial data: %s", json_data)
   a = TodoistData(json_data)
   while True:
-    time.sleep(5)
-    logging.info("** Beginning sync")
-    logging.info("* Generating modifications")
     mods = a.GetProjectMods()
-    logging.info("* Finished generating modifications")
+    if len(mods) == 0:
+      time.sleep(5)
+    else:
+      logging.info("* Modifications necessary - skipping sleep cycle.")
+    logging.info("** Beginning sync")
     sync_state = a.GetSyncState()
     changed_data = DoSyncAndGetUpdated(mods, sync_state).read()
     logging.debug("Got sync data %s", changed_data)
