@@ -6,6 +6,8 @@ A more GTD-like workflow for Todoist. Uses the REST API to add and remove a `@ne
 This program looks at every list in your Todoist account.
 Any list that ends with `--` or `=` is treated specially, and processed by NextAction.
 
+Note that NextAction requires Todoist Premium to function properly, as labels are a premium feature.
+
 Activating NextAction
 ======
 
