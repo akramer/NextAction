@@ -123,7 +123,6 @@ class Project(object):
     self.indent = 0
     self.is_archived = initial_data['is_archived'] == 1
     self.is_deleted = initial_data['is_deleted'] == 1
-    self.last_updated = initial_data['last_updated']
     self.name = initial_data['name']
     # Project should act like an item, so it should have content.
     self.content = initial_data['name']
@@ -131,7 +130,6 @@ class Project(object):
 
   def UpdateChangedData(self, changed_data):
     self.name = changed_data['name']
-    self.last_updated = changed_data['last_updated']
 
   def IsSequential(self):
     return self.name.endswith('--')
