@@ -1,3 +1,5 @@
+# This repository has bitrotted - the torch is now being carried by @nikdoof and an up-to-date repository is located here: [https://github.com/nikdoof/NextAction](https://github.com/nikdoof/NextAction)
+
 NextAction
 ==========
 
