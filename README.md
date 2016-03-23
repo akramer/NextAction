@@ -1,4 +1,4 @@
-# This repository has bitrotted - the torch is now being carried by @nikdoof and an up-to-date repository is located here: [https://github.com/nikdoof/NextAction](https://github.com/nikdoof/NextAction)
+# This code here no longer works - the torch is now being carried by @nikdoof and an up-to-date repository is located here: [https://github.com/nikdoof/NextAction](https://github.com/nikdoof/NextAction)
 
 NextAction
 ==========
